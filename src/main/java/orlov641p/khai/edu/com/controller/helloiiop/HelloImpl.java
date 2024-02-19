@@ -1,0 +1,16 @@
+package orlov641p.khai.edu.com.controller.helloiiop;
+
+import orlov641p.khai.edu.com.controller.lab5iiop.HelloInterface;
+
+import javax.rmi.PortableRemoteObject;
+
+public class HelloImpl extends PortableRemoteObject implements HelloInterface {
+   public HelloImpl() throws java.rmi.RemoteException {
+       super();     // invoke rmi linking and remote object initialization
+   }
+
+   public void sayHello( String from ) throws java.rmi.RemoteException {
+       System.out.println( "Hello from " + from + "!!" );
+       System.out.flush();
+   }
+}

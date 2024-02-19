@@ -1,0 +1,7 @@
+interface ServerIDL{
+    string sendClientMessage(in string operation);
+    string sendOrderMessage(in string operation);
+    string sendFlightMessage(in string operation);
+    string sendTicketMessage(in string operation);
+    oneway void shutdown();
+};
