@@ -1,7 +1,5 @@
 package orlov641p.khai.edu.com.controller.helloiiop;
 
-import orlov641p.khai.edu.com.controller.lab5iiop.HelloInterface;
-
 import javax.rmi.PortableRemoteObject;
 
 public class HelloImpl extends PortableRemoteObject implements HelloInterface {
