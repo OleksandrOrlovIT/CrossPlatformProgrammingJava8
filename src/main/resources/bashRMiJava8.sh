@@ -8,7 +8,8 @@ javac java/orlov641p/khai/edu/com/controller/lab6idl/*.java java/orlov641p/khai/
 orbd -ORBInitialPort 1050&
 temp=$!
 
-cd /home/kazutaka/IdeaProjects/CrossPlatformProgrammingJava8/src/main/java
+#Path to java directory from your parent directory
+cd
 
 java orlov641p.khai.edu.com.controller.lab6idl.MainServerIDL -ORBInitialPort 1050 -ORBInitialHost localhost &
 
